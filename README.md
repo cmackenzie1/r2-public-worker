@@ -16,7 +16,7 @@ npx wrangler@latest r2 bucket create public
 
 ```toml
 [[r2_buckets]]
-binding = 'PUBLIC_BUCKET' # <~ valid JavaScript variable name
+binding = 'PUBLIC' # <~ valid JavaScript variable name
 bucket_name = 'public'
 ```
 
@@ -25,3 +25,7 @@ bucket_name = 'public'
 ```bash
 npx wrangler@latest publish
 ```
+
+5. 🎉 You've got a public bucket
+
+Give it a try: https://r2-public-worker.cdmacken.workers.dev/duck.png
