@@ -1,0 +1,8 @@
+name = "r2-public-worker"
+main = "src/index.ts"
+compatibility_date = "2022-05-11"
+compatibility_flags = ["r2_public_beta_bindings"]
+
+[[r2_buckets]]
+binding = 'PUBLIC_BUCKET' # <~ valid JavaScript variable name
+bucket_name = 'public'
