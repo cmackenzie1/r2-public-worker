@@ -15,7 +15,7 @@ interface AppEnv {
 export default {
     async fetch(request: Request, env: AppEnv): Promise<Response> {
         const {pathname} = new URL(request.url);
-        const obj = await env.PUBLIC.get(pathname.slice(1, undefined))
+        const obj = await env.PUBLIC.get(decodeURIComponent(pathname.slice(1, undefined)))
         if (obj === null) return new Response("Not found.", {status: 404})
 
         const headers: Record<string, string> = {}
