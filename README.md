@@ -1,5 +1,8 @@
 # r2-public-worker
 
+### Public buckets are now available! https://developers.cloudflare.com/r2/data-access/public-buckets/
+
+--- 
 A Cloudflare Worker to make your R2 bucket public!
 
 ## Minimum Requirements
